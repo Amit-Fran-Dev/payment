@@ -1,0 +1,28 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "Pages_Components/Payment/Payment.module.css.map": true,
+        "Pages_Components/Payment/Payment.module.css": true,
+        "components/Header/Drawer.module.css.map": true,
+        "components/Header/Drawer.module.css": true,
+        "Pages_Components/Payment/plans.module.css": true,
+        "Pages_Components/Payment/plans.module.css.map": true,
+        "Pages_Components/Payment/price.module.css.map": true,
+        "Pages_Components/Payment/price.module.css": true
+    },
+    "hide-files.files": [
+        "Pages_Components/Payment/Payment.module.css.map",
+        "Pages_Components/Payment/Payment.module.css",
+        "components/Header/Drawer.module.css.map",
+        "components/Header/Drawer.module.css",
+        "Pages_Components/Payment/plans.module.css",
+        "Pages_Components/Payment/plans.module.css.map",
+        "Pages_Components/Payment/price.module.css.map",
+        "Pages_Components/Payment/price.module.css"
+    ]
+}

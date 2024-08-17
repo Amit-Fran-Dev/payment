@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --dark-magenta: 147, 40, 146;
+  --ghost-white: 246, 249, 255;
+  --gray: 125, 127, 130;
+  --dodger-blue: 0, 140, 255;
+  --primary-900: #020617;
+  --primary-800: #121b4b;
+  --primary-700: #21307f;
+  --primary-600: #3045b3;
+  --primary-500: #3e59e8;
+  --primary-400: #697eed;
+  --primary-300: #94a3f2;
+  --primary-200: #bfc8f7;
+  --primary-100: #e8eefc;
+  --primary-50: #f9faff;
+
+  --xs: 576px;
+  --sm: 720px;
+  --md: 1120px;
+  --lg: 1280px;
+  --xl: 1472px;
+  --xxl: 1600px;
+}
+body,
+html {
+  /* background-color: var(--primary-50); */
+}
+body {
+  min-height: 100vh;
+}
+h2 {
+  font-family: "PT Serif", serif;
+}
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: "Urbanist", sans-serif;
+}
+ul li a {
+  font-family: "PT Serif", serif;
+}
+.container-xs {
+  max-width: var(--xs);
+}
+
+.container-sm {
+  max-width: var(--sm);
+}
+
+.container-md {
+  max-width: var(--md);
+}
+
+.container-lg {
+  max-width: var(--lg);
+}
+
+.container-xl {
+  max-width: var(--xl);
+}
+
+.container-xxl {
+  max-width: var(--xxl);
+}
+
+.container-xs,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.5rem;
+}
+
+@media screen and (max-width: 576px) {
+  .hiddenFrom-xs {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .hiddenFrom-sm {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .hiddenFrom-md {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .hiddenFrom-lg {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1472px) {
+  .hiddenFrom-xl {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .hiddenFrom-xxl {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 576.1px) {
+  .visibleFrom-xs {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 720.1px) {
+  .visibleFrom-sm {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1120.1px) {
+  .visibleFrom-md {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1280.1px) {
+  .visibleFrom-lg {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1472.1px) {
+  .visibleFrom-xl {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1600.1px) {
+  .visibleFrom-xxl {
+    display: none !important;
+  }
+}

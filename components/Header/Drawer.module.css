@@ -1,0 +1,60 @@
+.drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  background-color: var(--primary-50);
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+  max-height: 100vh;
+}
+
+.drawerOpen {
+  transform: translateY(0);
+}
+
+.drawerHeader {
+  padding: 16px;
+  font-size: 1.2em;
+}
+
+.drawerContent {
+  padding: 16px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.overlayVisible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.navigationContainer ul {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.navigationContainer li {
+  color: var(--primary-700);
+}/*# sourceMappingURL=Drawer.module.css.map */

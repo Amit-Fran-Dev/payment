@@ -1,0 +1,295 @@
+.pageSection{
+    display: grid;
+    width: 100%;
+    gap: 1rem;
+    margin-bottom: 300px;
+}
+@media screen and (min-width: 1281px) {
+    .pageSection {
+      grid-template-columns: 1.9fr 1fr;
+    }
+
+  }
+  
+  @media screen and (max-width: 1280px) {
+    .pageSection{
+        // grid-template-rows: 1fr auto;
+    }
+    .paymentCards{
+    padding: 0;
+    }
+    .paymentMethods{
+        margin-bottom: 2rem;
+    }
+    .sec1{
+        order:2;
+    }
+    .sec2{
+        order:1;
+    }
+}
+
+
+.sec2{
+    margin-top: 1rem;
+}
+.heading{
+    font-size: clamp(1rem, 1.3rem + 1vw, 2.1rem);
+    margin: 2rem 0;
+    font-weight: 700;
+}
+.headingMob{
+    font-size: clamp(1rem, 1.3rem + 1vw, 2.1rem);
+    margin-bottom: 0;
+    margin-top: 2rem;
+    font-weight: 700;
+}
+
+
+.paymentBox{
+    padding: 1.2rem;
+    display: grid;
+    border-radius: 0.4rem;
+    background-color: #fff;
+    box-shadow: 2px 5px 6px 7px var(--primary-100);
+    gap:1rem;
+    min-height: 500px;
+}
+@media screen and (min-width: 721px){
+    .paymentBox{
+        grid-template-columns: 300px 1fr;
+    }
+}
+@media screen and (max-width: 720px){
+    .paymentBox{
+        grid-template-columns: 1fr;
+    }
+}
+.paymentMethods{
+    min-width: 300px;
+    background: linear-gradient(45deg, var(--primary-50), var(--primary-100));
+    border-radius: 0.5rem;
+    user-select: none;
+    .upi{
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        
+    }
+    .DbCb{
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    .netB{
+    }
+
+    .upi,.DbCb,.netB{
+        display: flex;
+        padding: 1rem 0;
+        cursor: pointer;
+        .logo{
+            padding: 0.5rem 1rem 1rem 1rem;
+        }
+        .methodContainer{
+            .name{
+                font-size: 1rem;
+                font-weight: bold;
+            }
+            .description{
+                font-size: 0.9rem;
+            }
+        }
+    }
+    .upi[data="1"],.DbCb[data="2"],.netB[data="3"]{
+        background-color: #fff !important;
+        position: relative;
+        border-bottom: 0px solid rgba(0,0,0,0.1);
+        &::after{
+            content:"";
+            position:absolute;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            width: 6px;
+            top:0;
+            left: -4px;
+            height: 100%;
+            background: rgba(var(--dark-magenta));
+        }
+    }
+    
+}
+.paymentMethods > div:hover{
+    background: var(--primary-100);
+}
+.paymentCards{
+    min-width: 300px;
+    max-width: 700px;
+    .upiHeading{
+        font-size: 1.3rem;
+        font-weight: bold;
+        
+    }
+
+    .upiEnter{
+        margin-top: 1rem;
+        border:2px solid var(--primary-200);
+        line-height: 1;
+        padding: 0.8rem;
+        width: 100%;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        letter-spacing: 2px;
+        outline:none;
+        font-family: "Dosis", sans-serif;
+        font-weight: bold;
+        color:#444;
+    }
+    .upiEnter:focus{
+        border-color: var(--primary-600);
+    }
+    .upiDesc{
+        margin-top: 2.5rem;
+        .wrapperDesc{
+            display: grid;
+            grid-template-columns: 25px 1fr;
+            margin-left: 1rem;
+            gap: 1rem;
+            font-family: "Urbanist", sans-serif;
+            font-weight: 700;
+            color: #444;
+            font-size: 15px;
+            margin-bottom: 1rem;
+            span{
+                width: 25px;
+                height: 25px;
+                font-size: 14px;
+                border-radius: 50%;
+                display: grid;
+                place-items: center;
+                color:#fff;
+                background-color: rgba(var(--dodger-blue));
+            }
+            p{
+            }
+        }
+    }
+}
+
+.MethodBtn{
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+.MethodBtn > .mBtn{
+    margin-top: 1rem;
+    background-color: transparent;
+    outline: none;
+    border:2px solid var(--primary-200);
+    width: auto;
+    height: 42px;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    &:hover{
+    border:2px solid var(--primary-700);
+    }
+}
+.MethodBtn > .mBtnDebit{
+    margin-top: 1rem;
+    background-color: transparent;
+    outline: none;
+    border:2px solid var(--primary-200);
+    width: auto;
+    height:35px;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    &:hover{
+    border:2px solid var(--primary-700);
+    }
+}   
+
+.MethodBtn .mBtnNetBank{
+    margin-top: 1rem;
+    background-color: transparent;
+    outline: none;
+    border:2px solid #8f8f8f;
+    width: auto;
+    height:50px;
+    border-radius: 0.2rem;
+    
+    overflow: hidden;
+    &:hover{
+    border:2px solid var(--primary-700);
+    }
+
+}   
+
+.secureMsg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 0.5rem;
+    p{
+        font-size: 1.2rem;
+        font-weight: bold;
+        color:#a9a9a9;
+        font-family: "Red Hat Display", sans-serif;
+    }
+}
+
+.submit{
+    width: 100%;
+    height: 1.5;
+    background-color: rgba(var(--dark-magenta));
+    color:#fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    margin-top: 1.3rem;
+}
+
+
+.debitMsgBox{
+    display: flex;
+    margin: 3rem 0 1rem 0;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    span{
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        color:#fff;
+        background-color: rgba(var(--dark-magenta));
+        margin-right: 0.5rem;
+    }
+    p{
+        font-weight: 500;
+    }
+    a{
+        color: rgba(var(--dark-magenta));
+        font-weight: 700;
+    }
+}
+
+.cardInputs{
+    display: flex;
+    gap: 1rem;
+}
+
+.dateBox{
+    position:relative;
+    width: 100%;
+    .date{
+        position: absolute;
+        width: 40;
+        height: 40;
+        top: 1.7rem;
+        right: 0.5rem;
+        .dateIcon{
+            color:rgba(var(--dark-magenta));
+        }
+    }
+
+}

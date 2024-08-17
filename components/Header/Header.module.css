@@ -1,0 +1,44 @@
+
+.section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoSection{
+    color: rgba(var(--dark-magenta));
+}
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+.navigations{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.4rem;
+    font-family: "Urbanist", sans-serif;
+}
+
+.action{
+    display: flex;
+    gap: 1rem;
+}
+.btn1,.btn2{
+    font-size: 19px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.btn1{
+    color:#fff;
+    background-color: rgba(var(--dark-magenta));
+}
+.btn2{
+    color: rgba(var(--dark-magenta));
+    border: 2px solid rgba(var(--dark-magenta));
+}
+.menu{
+    color: rgba(var(--dark-magenta));
+}
