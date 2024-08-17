@@ -1,7 +1,7 @@
 .pageSection {
   display: grid;
-  width: 100%;
   gap: 1rem;
+  width: 100%;
   margin-bottom: 300px;
 }
 
@@ -11,6 +11,9 @@
   }
 }
 @media screen and (max-width: 1280px) {
+  .pageSection {
+    grid-template-rows: 1fr auto;
+  }
   .paymentCards {
     padding: 0;
   }
@@ -29,13 +32,13 @@
 }
 
 .heading {
-  font-size: clamp(1rem, 1.3rem + 1vw, 2.1rem);
+  font-size: clamp(0.9rem, 1.2rem + 1vw, 2rem);
   margin: 2rem 0;
   font-weight: 700;
 }
 
 .headingMob {
-  font-size: clamp(1rem, 1.3rem + 1vw, 2.1rem);
+  font-size: clamp(0.9rem, 1.2rem + 1vw, 2rem);
   margin-bottom: 0;
   margin-top: 2rem;
   font-weight: 700;
@@ -62,7 +65,7 @@
   }
 }
 .paymentMethods {
-  min-width: 300px;
+  min-width: 280px;
   background: linear-gradient(45deg, var(--primary-50), var(--primary-100));
   border-radius: 0.5rem;
   -webkit-user-select: none;
@@ -84,11 +87,11 @@
   padding: 0.5rem 1rem 1rem 1rem;
 }
 .paymentMethods .upi .methodContainer .name, .paymentMethods .DbCb .methodContainer .name, .paymentMethods .netB .methodContainer .name {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: bold;
 }
 .paymentMethods .upi .methodContainer .description, .paymentMethods .DbCb .methodContainer .description, .paymentMethods .netB .methodContainer .description {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .paymentMethods .upi[data="1"], .paymentMethods .DbCb[data="2"], .paymentMethods .netB[data="3"] {
   background-color: #fff !important;
@@ -112,11 +115,11 @@
 }
 
 .paymentCards {
-  min-width: 300px;
+  min-width: 280px;
   max-width: 700px;
 }
 .paymentCards .upiHeading {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 .paymentCards .upiEnter {
@@ -126,7 +129,7 @@
   padding: 0.8rem;
   width: 100%;
   border-radius: 0.5rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   letter-spacing: 2px;
   outline: none;
   font-family: "Dosis", sans-serif;
@@ -147,19 +150,20 @@
   font-family: "Urbanist", sans-serif;
   font-weight: 700;
   color: #444;
-  font-size: 15px;
+  font-size: 0.8rem;
   margin-bottom: 1rem;
 }
 .paymentCards .upiDesc .wrapperDesc span {
   width: 25px;
   height: 25px;
-  font-size: 14px;
+  font-size: 0.8rem;
   border-radius: 50%;
   display: grid;
   place-items: center;
   color: #fff;
   background-color: rgba(var(--dodger-blue));
 }
+
 .MethodBtn {
   display: flex;
   gap: 0.5rem;
@@ -217,7 +221,7 @@
   gap: 0.5rem;
 }
 .secureMsg p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
   color: #a9a9a9;
   font-family: "Red Hat Display", sans-serif;
@@ -228,7 +232,7 @@
   height: 1.5;
   background-color: rgba(var(--dark-magenta));
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
   padding: 0.6rem;
   border-radius: 0.5rem;
@@ -239,12 +243,12 @@
   display: flex;
   margin: 3rem 0 1rem 0;
   flex-wrap: wrap;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .debitMsgBox span {
   width: 25px;
   height: 25px;
-  font-size: 14px;
+  font-size: 0.8rem;
   border-radius: 50%;
   display: grid;
   place-items: center;

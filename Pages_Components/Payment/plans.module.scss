@@ -37,7 +37,7 @@
 }
 
 .card h3{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
@@ -87,7 +87,7 @@
     margin-bottom: 1.5rem;
 
     div > h4{
-        font-size: 1.1rem;
+        font-size: 1rem;
         font-weight: bold;
         color:#313131;
         font-family: "Urbanist", sans-serif;
@@ -95,7 +95,7 @@
     div > p {
         font-weight: 500;
         color:#666;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -106,7 +106,7 @@
     button{
         display: flex;
         gap: 1rem;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-family: "Urbanist", sans-serif;
         font-weight: bold;
         justify-content: center;
@@ -160,7 +160,7 @@
         }
     
         .firstRow2{
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: 700;
             font-family: "Urbanist", sans-serif;
             color:#393939;
@@ -168,7 +168,7 @@
         .secondRow2{
             color: rgba(var(--dark-magenta));
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
     }
     
@@ -189,7 +189,7 @@
         color: #444;
     }
     p{
-        font-size: 1.1rem;
+        font-size: 1rem;
         color: rgba(var(--dodger-blue),0.8);
         font-weight: 600;
         cursor: pointer;
@@ -198,12 +198,12 @@
 
 .totalRsBox{
     .label{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         font-weight: bold;
         color:#444;
     }
     .totalRs{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         font-weight: bold;
         color: rgba(var(--dark-magenta));
     }
@@ -230,7 +230,7 @@
         justify-content: space-between;
         color: #3b3b3b;
         p{
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: 500;
             padding: 0 1rem;
         }
