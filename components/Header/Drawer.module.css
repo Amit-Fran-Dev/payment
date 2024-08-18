@@ -54,7 +54,15 @@
 .navigationContainer ul {
   font-size: 1.2rem;
   font-weight: 600;
+  list-style: none;
+  padding: 0;
 }
-.navigationContainer li {
-  color: var(--primary-700);
+.navigationContainer .navigationItem {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+.navigationContainer .navigationItem svg {
+  margin-right: 8px;
+  color: rgba(var(--dark-magenta));
 }/*# sourceMappingURL=Drawer.module.css.map */

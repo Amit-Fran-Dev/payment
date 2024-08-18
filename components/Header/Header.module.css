@@ -3,9 +3,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 2rem;
 }
 .logoSection{
     color: rgba(var(--dark-magenta));
+}
+.Drawer{
+    
 }
 .logo{
     font-size: 24px;

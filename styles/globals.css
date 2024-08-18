@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --dark-magenta: 147, 40, 146;
+  --dark-magenta: 147, 40, 142;
   --ghost-white: 246, 249, 255;
   --gray: 125, 127, 130;
   --dodger-blue: 0, 140, 255;
@@ -28,6 +28,7 @@
 body,
 html {
   /* background-color: var(--primary-50); */
+  overflow-x: hidden;
 }
 body {
   min-height: 100vh;
@@ -153,11 +154,12 @@ ul li a {
 }
 
 
-.scrollBar::-webkit-scrollbar{
+.scrollBar::-webkit-scrollbar, ::-webkit-scrollbar{
   background-color: #fff;
-  width: 0.5rem;
+  width: 0.6rem;
 }
-.scrollBar::-webkit-scrollbar-thumb{
+.scrollBar::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb{
   background-color: rgba(var(--dark-magenta));
   border-radius: 0.25rem;
 }
+

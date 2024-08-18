@@ -49,8 +49,8 @@
 }
 
 .centerLogo {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   display: grid;
   place-items: center;
   z-index: 1;
@@ -63,8 +63,8 @@
 .centerLogo::before {
   content: "";
   background-color: rgba(var(--dark-magenta));
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   display: grid;
   place-items: center;
   border-radius: 50%;

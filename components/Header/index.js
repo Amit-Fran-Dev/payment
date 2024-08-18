@@ -13,9 +13,11 @@ const Header = () => {
       className={`${classes.section} container-xl`}
       style={{ minHeight: "60px" }}
     >
-      <Drawer isOpen={opened} onClose={toggleOpened}/>
+      <Drawer isOpen={opened} className={classes.Drawer} onClose={toggleOpened}/>
       <div className={classes.logoSection}>
-        <h1 className={classes.logo}>{logo}</h1>
+        <div className={classes.logo}>
+          <img src="https://images.cordeliacruises.com/cordelia_v2/public/assets/cordelia-new-logo-mobile.svg" width="auto" height={60}/>
+        </div>
       </div>
       <div>
         <ul className={`${classes.navigations} hiddenFrom-lg`}>{links}</ul>
