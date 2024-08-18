@@ -151,3 +151,13 @@ ul li a {
     display: none !important;
   }
 }
+
+
+.scrollBar::-webkit-scrollbar{
+  background-color: #fff;
+  width: 0.5rem;
+}
+.scrollBar::-webkit-scrollbar-thumb{
+  background-color: rgba(var(--dark-magenta));
+  border-radius: 0.25rem;
+}

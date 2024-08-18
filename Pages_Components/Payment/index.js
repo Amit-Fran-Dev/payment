@@ -323,16 +323,17 @@ import React from "react";
 import classes from "./Payment.module.css";
 import PaymentMethods from "./PaymentMethods";
 import Plans from "./Plans";
+import { IconArrowLeft } from '@tabler/icons-react';
 
 const PaymentGetway = () => {
   return (
     <div className={`${classes.pageSection} container-xl`}>
       <h2 className={`${classes.headingMob} visibleFrom-lg`}>
-        Select Payment Method
+      <IconArrowLeft width={40} height={40} style={{cursor:"pointer"}} title="Go Back" onClick={()=>{window.history.back()}} stroke={2} />Select Payment Method
       </h2>
       <div className={classes.sec1}>
         <h2 className={`${classes.heading} hiddenFrom-lg`}>
-          Select Payment Method
+        <IconArrowLeft width={40} height={40} style={{cursor:"pointer"}} title="Go Back" onClick={()=>{window.history.back()}} stroke={2} />Select Payment Method
         </h2>
         <PaymentMethods />
       </div>

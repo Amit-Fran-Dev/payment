@@ -17,6 +17,7 @@
     }
     .paymentCards{
     padding: 0;
+    // margin-top: 2rem;
     }
     .paymentMethods{
         margin-bottom: 2rem;
@@ -37,12 +38,20 @@
     font-size: clamp(0.9rem, 1.2rem + 1vw, 2rem);
     margin: 2rem 0;
     font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
 }
 .headingMob{
     font-size: clamp(0.9rem, 1.2rem + 1vw, 2rem);
     margin-bottom: 0;
     margin-top: 2rem;
     font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
 }
 
 
@@ -51,7 +60,7 @@
     display: grid;
     border-radius: 0.4rem;
     background-color: #fff;
-    box-shadow: 2px 5px 6px 7px var(--primary-100);
+    box-shadow: 2px 5px 6px 4px rgba(0,0,0,0.1);
     gap:1rem;
     min-height: 500px;
 }
@@ -142,7 +151,7 @@
         color:#444;
     }
     .upiEnter:focus{
-        border-color: var(--primary-600);
+        border-color: rgba(var(--dark-magenta));
     }
     .upiDesc{
         margin-top: 2.5rem;

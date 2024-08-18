@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import classes from "./Payment.module.css";
 import { Bank, Debit, Upi } from "./svgs/card";
 import UpiCard from "./UpiCard";
@@ -9,6 +9,9 @@ const PaymentMethods = () => {
   const [active, setActive] = useState(1);
   const [switchPay, setSwitchPay] = useState("UpiCard");
 
+  // Create refs for each payment method section
+  const locRef = useRef(null);
+
   const toggleCard =
     (switchPay === "UpiCard" && <UpiCard />) ||
     (switchPay === "DebitCard" && <DebitCard />) ||
@@ -17,6 +20,7 @@ const PaymentMethods = () => {
   const handleSetSwitchPay = (val, act) => {
     setSwitchPay(val);
     setActive(act);
+      locRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -26,6 +30,7 @@ const PaymentMethods = () => {
           onClick={() => handleSetSwitchPay("UpiCard", 1)}
           className={classes.upi}
           data={active}
+          ref={locRef}  
         >
           <div className={classes.logo}>
             <Upi />
@@ -41,6 +46,7 @@ const PaymentMethods = () => {
           onClick={() => handleSetSwitchPay("DebitCard", 2)}
           className={classes.DbCb}
           data={active}
+          
         >
           <div className={classes.logo}>
             <Debit />
@@ -65,6 +71,7 @@ const PaymentMethods = () => {
             <p className={classes.description}>All Measure Banks Available</p>
           </div>
         </div>
+        <span ref={locRef} ></span>
       </div>
       {toggleCard}
     </div>

@@ -12,7 +12,7 @@ const DebitCard = () => {
   ];
 
   return (
-    <div className={classes.paymentCards}>
+    <div className={classes.paymentCards} id="2">
       <h3 className={classes.upiHeading}>Enter Your Card Details</h3>
       <div className={classes.MethodBtn}>
         {paymentOptions.map((option, index) => (
