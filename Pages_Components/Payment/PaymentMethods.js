@@ -9,7 +9,6 @@ const PaymentMethods = () => {
   const [active, setActive] = useState(1);
   const [switchPay, setSwitchPay] = useState("UpiCard");
 
-  // Create refs for each payment method section
   const locRef = useRef(null);
 
   const toggleCard =
@@ -20,7 +19,9 @@ const PaymentMethods = () => {
   const handleSetSwitchPay = (val, act) => {
     setSwitchPay(val);
     setActive(act);
-      locRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (window.innerWidth < 600) {
+      locRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
