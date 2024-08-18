@@ -290,4 +290,18 @@
 }
 .dateBox .date .dateIcon {
   color: rgba(var(--dark-magenta));
+}
+
+@media screen and (max-width: 719px) {
+  .upi[data="1"]::before, .DbCb[data="2"]::before, .netB[data="3"]::before {
+    content: "";
+    position: absolute;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 6px;
+    top: 0;
+    right: -4px;
+    height: 100%;
+    background: rgba(var(--dark-magenta));
+  }
 }/*# sourceMappingURL=Payment.module.css.map */

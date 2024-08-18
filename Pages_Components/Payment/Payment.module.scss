@@ -301,3 +301,19 @@
     }
 
 }
+
+@media  screen and (max-width: 719px) {
+    .upi[data="1"],.DbCb[data="2"],.netB[data="3"]{
+        &::before{
+            content:"";
+            position:absolute;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            width: 6px;
+            top:0;
+            right: -4px;
+            height: 100%;
+            background: rgba(var(--dark-magenta));
+        }
+    }
+}
