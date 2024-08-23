@@ -1,0 +1,56 @@
+.headingForm {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.formDesc {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.question {
+  display: grid;
+  width: 100%;
+  gap: 0.5rem;
+  grid-template-columns: 1fr auto;
+}
+.question p {
+  margin-bottom: 1.5rem;
+  font-size: clamp(1rem, 1rem + 0.2vw, 1.2rem);
+  list-style-type: disc;
+}
+.question .options {
+  display: flex;
+  gap: 1rem;
+}
+.question .options label {
+  cursor: pointer;
+}
+
+.termsConditions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.termsConditions input {
+  color: blue;
+}
+
+.submit {
+  height: 1.5;
+  background-color: rgba(var(--dark-magenta));
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0.6rem;
+  border-radius: 0.3rem;
+  margin: 2rem auto 5rem auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=health-declaration.module.css.map */

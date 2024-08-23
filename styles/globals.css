@@ -7,6 +7,7 @@
   --ghost-white: 246, 249, 255;
   --gray: 125, 127, 130;
   --dodger-blue: 0, 140, 255;
+  --green-fs: 0, 152, 33, 1;
   --primary-900: #020617;
   --primary-800: #121b4b;
   --primary-700: #21307f;
@@ -163,3 +164,12 @@ ul li a {
   border-radius: 0.25rem;
 }
 
+.heading{
+  font-size: clamp(0.9rem, 1.2rem + 1vw, 2rem);
+  margin: 2rem 0;
+  font-weight: 700;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}

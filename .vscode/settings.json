@@ -13,7 +13,15 @@
         "Pages_Components/Payment/plans.module.css": true,
         "Pages_Components/Payment/plans.module.css.map": true,
         "Pages_Components/Payment/price.module.css.map": true,
-        "Pages_Components/Payment/price.module.css": true
+        "Pages_Components/Payment/price.module.css": true,
+        "Pages_Components/HealthDeclaration/css/health-declaration.module.css": true,
+        "Pages_Components/HealthDeclaration/css/health-declaration.module.css.map": true,
+        "Pages_Components/HealthDeclaration/css/stepper.module.css": true,
+        "Pages_Components/HealthDeclaration/css/stepper.module.css.map": true,
+        "Pages_Components/Cabin/css/health-declaration.module.css": true,
+        "Pages_Components/Cabin/css/health-declaration.module.css.map": true,
+        "Pages_Components/Cabin/css/stepper.module.css": true,
+        "Pages_Components/Cabin/css/stepper.module.css.map": true
     },
     "hide-files.files": [
         "Pages_Components/Payment/Payment.module.css.map",
@@ -23,6 +31,14 @@
         "Pages_Components/Payment/plans.module.css",
         "Pages_Components/Payment/plans.module.css.map",
         "Pages_Components/Payment/price.module.css.map",
-        "Pages_Components/Payment/price.module.css"
+        "Pages_Components/Payment/price.module.css",
+        "Pages_Components/HealthDeclaration/css/health-declaration.module.css",
+        "Pages_Components/HealthDeclaration/css/health-declaration.module.css.map",
+        "Pages_Components/HealthDeclaration/css/stepper.module.css",
+        "Pages_Components/HealthDeclaration/css/stepper.module.css.map",
+        "Pages_Components/Cabin/css/health-declaration.module.css",
+        "Pages_Components/Cabin/css/health-declaration.module.css.map",
+        "Pages_Components/Cabin/css/stepper.module.css",
+        "Pages_Components/Cabin/css/stepper.module.css.map"
     ]
 }
