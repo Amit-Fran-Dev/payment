@@ -1,53 +1,64 @@
-
-.container{
+.container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
-.headingForm{
+
+.headingForm {
     font-size: var(--font-size-xl);
     font-weight: bold;
     margin-bottom: 1rem;
 }
-.formDesc{
+
+.formDesc {
     font-size: var(--font-size-xl);
     margin-bottom: 3rem;
 }
-.question{
+
+.question {
     display: grid;
     width: 100%;
     gap: 0.5rem;
-    grid-template-columns: 1fr auto;
 
-    p{
+    p {
         font-size: clamp(var(--font-size-md), var(--font-size-md) + 0.5vw, var(--font-size-xl));
         list-style-type: disc;
-        text-align:start;
+        text-align: start;
     }
-    .options{
+
+    .options {
         display: flex;
         gap: 1rem;
-
-        label{
+        justify-content: right;
+        label {
             cursor: pointer;
         }
     }
 }
 
-.termsConditions{
+@media screen and (min-width : 720px) {
+    .question {
+
+        grid-template-columns: 1fr auto;
+    }
+}
+
+.termsConditions {
     display: flex;
     gap: 0.5rem;
     margin-top: 3rem;
     font-size: clamp(var(--font-size-md), var(--font-size-md) + 0.5vw, var(--font-size-xl));
     font-weight: 600;
-    input{
+
+    input {
         color: blue;
     }
 }
-.submit{
+
+.submit {
     height: 1.5;
     background-color: rgba(var(--dark-magenta));
-    color:#fff;
+    color: #fff;
     font-size: var(--font-size-xl);
     font-weight: 700;
     padding: 0.6rem;
@@ -56,16 +67,16 @@
 }
 
 
-.center{
+.center {
     display: flex;
     justify-content: center;
 }
 
 
-.middleField{
+.middleField {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
     margin: 0 1rem;
-}   
+}

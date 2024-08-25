@@ -19,7 +19,6 @@
   display: grid;
   width: 100%;
   gap: 0.5rem;
-  grid-template-columns: 1fr auto;
 }
 .question p {
   font-size: clamp(var(--font-size-md), var(--font-size-md) + 0.5vw, var(--font-size-xl));
@@ -29,11 +28,17 @@
 .question .options {
   display: flex;
   gap: 1rem;
+  justify-content: right;
 }
 .question .options label {
   cursor: pointer;
 }
 
+@media screen and (min-width: 720px) {
+  .question {
+    grid-template-columns: 1fr auto;
+  }
+}
 .termsConditions {
   display: flex;
   gap: 0.5rem;

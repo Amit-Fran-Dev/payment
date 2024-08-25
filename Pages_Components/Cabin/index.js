@@ -11,14 +11,14 @@ const Cabin = () => {
   const [activeState, setactiveState] = useState(3);
 
   const props = {
-    activeBox: activeBox,
+    activeBox,
     active: activeState,
     activeState,
     setActiveBox,
     setactiveState,
   }
   useEffect(() => {
-    setActiveBox(activeState)
+    setActiveBox(activeState);
   }, [activeState])
   
   return (
@@ -26,13 +26,13 @@ const Cabin = () => {
     <Heading title="Cabin 1 : Gustavo Culhane"/>
     <Stepper {...props}/>
     {
-    activeBox == 1 && <TravelInfo/>
+    activeBox == 1 && <TravelInfo {...props}/>
     }
     {
-    activeBox == 2 && <ArrivalTime/>
+    activeBox == 2 && <ArrivalTime {...props}/>
     }
     {
-    activeBox == 3 && <HealthDeclaration/>
+    activeBox == 3 && <HealthDeclaration {...props}/>
     }
     </div>
   )

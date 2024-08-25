@@ -2,7 +2,7 @@ import { IconCheck } from "@tabler/icons-react";
 import styles from "./css/stepper.module.css";
 import { useEffect, useState } from "react";
 
-const Stepper = ({ active,activeState, setActiveBox }) => {
+const Stepper = ({ active,activeBox,activeState, setActiveBox,setactiveState }) => {
   const [activeCol, setActiveCol] = useState({
     step1: false,
     step2: false,
@@ -29,8 +29,10 @@ const Stepper = ({ active,activeState, setActiveBox }) => {
   const handleClick =(n)=>{
     if(activeState >= n){
       setActiveBox(n);
+      setactiveState(n)
     }
   }
+
   return (
     <div className={styles.stepper}>
       <div className={styles.stepBox}>

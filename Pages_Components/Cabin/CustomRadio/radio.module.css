@@ -1,9 +1,10 @@
 .radioGroup {
     display: flex;
     gap: 1rem;
-    
+    justify-content: center;
+    align-items: center;
   }
-  
+
   .radioOption {
     display: flex;
     align-items: center;

@@ -170,3 +170,15 @@ main button:not(header):hover {
 main button:active{
   filter: grayscale(60%);
 }
+
+.cordelaBtn{
+  min-width: 280px;
+  height: 1.5;
+  background-color: rgba(var(--dark-magenta));
+  color:#fff;
+  font-size: var(--font-size-xxl);
+  font-weight: 700;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  margin-top: 1.3rem;
+}
