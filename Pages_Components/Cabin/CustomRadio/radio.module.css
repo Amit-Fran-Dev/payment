@@ -1,17 +1,21 @@
 .radioGroup {
     display: flex;
     gap: 1rem;
+    
   }
   
   .radioOption {
     display: flex;
-    align-items: start;
+    align-items: center;
     cursor: pointer;
-    font-size: 1rem;
     user-select: none;
     font-weight: 600;
   }
-  
+  @media screen and (max-width: 576px) {
+    .radioOption{
+      font-size: 0.9rem;
+    }
+  }
   .hiddenInput {
     position: absolute;
     opacity: 0;

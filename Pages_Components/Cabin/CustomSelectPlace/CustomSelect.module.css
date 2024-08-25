@@ -1,0 +1,64 @@
+.customSelect {
+    position: relative;
+    min-width: 300px;
+  }
+  
+  .customSelectTrigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--mercury-200);
+    border-radius: 0.4rem;
+    cursor: pointer;
+    outline: none;
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .customSelectTrigger:hover {
+    background: var(--mercury-300);
+  }
+  
+  .icon {
+    margin-left: 10px;
+    font-size: 16px;
+    color: rgba(var(--mercury-600));
+  }
+  
+  .customOptions {
+    position: absolute;
+    font-family: "Dosis", sans-serif;
+    outline: 1px solid var(--mercury-800);
+    border-radius: 0.4rem;
+    font-weight: bold;
+    color: var(--mercury-950);
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .customOption {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .customOption:hover {
+    background: var(--mercury-100);
+  }
+  
+  .active {
+    background: linear-gradient(20deg, var(--mercury-500), var(--mercury-300));
+    color: white; 
+    font-weight: bold; 
+  }
+  .active:hover{
+    background-color: var(--mercury-400);
+    color: white; 
+    font-weight: bold; 
+  }
+  

@@ -3,8 +3,9 @@ import React, { useState } from "react";
 import styles from "./radio.module.css";
 import { IconX, IconCheck } from "@tabler/icons-react";
 
-export const YesInput = ({ selectedValue, handleChange }) => (
-  <label className={styles.radioOption}>
+export const YesInput = ({ selectedValue, handleChange }) =>{
+  return (
+    <label className={styles.radioOption}>
     <input
       type="radio"
       name="option"
@@ -24,10 +25,12 @@ export const YesInput = ({ selectedValue, handleChange }) => (
     </span>
     YES
   </label>
-);
+  )
+};
 
-export const NoInput = ({ selectedValue, handleChange }) => (
-  <label className={styles.radioOption}>
+export const NoInput = ({ selectedValue, handleChange }) => {
+  return (
+    <label className={styles.radioOption}>
     <input
       type="radio"
       name="option"
@@ -47,7 +50,8 @@ export const NoInput = ({ selectedValue, handleChange }) => (
     </span>
     NO
   </label>
-);
+  )
+};
 
 export const TermsCheckbox = () => {
   const [isChecked, setIsChecked] = useState(false);

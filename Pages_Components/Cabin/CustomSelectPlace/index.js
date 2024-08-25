@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import styles from './CustomSelect.module.css';
-import { IconChevronDown, IconArrowDownFromArc } from '@tabler/icons-react';
+import { IconChevronDown, IconChevronUp } from '@tabler/icons-react';
 
 const CustomSelect = ({ options, defaultValue, onChange }) => {
-  const placeholder = { label: 'Select a bank', value: '' };
-
+  const placeholder = { label: 'Place', value: '' };
   const [selected, setSelected] = useState(() => {
     const defaultOption = options.find(option => option.value === defaultValue) || null;
     return defaultOption ? { label: defaultOption.label, value: defaultOption.value } : placeholder;
   });
   const [isOpen, setIsOpen] = useState(false);
+  const selectRef = useRef(null);
 
   const handleSelect = (option) => {
     if (option.value === '') {
@@ -20,21 +20,34 @@ const CustomSelect = ({ options, defaultValue, onChange }) => {
     setIsOpen(false);
   };
 
+  const handleClickOutside = (event) => {
+    if (selectRef.current && !selectRef.current.contains(event.target)) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   return (
-    <div className={styles.customSelect}>
+    <div ref={selectRef} className={styles.customSelect}>
       <div 
         className={styles.customSelectTrigger} 
         onClick={() => setIsOpen(!isOpen)}
       >
         {selected.label}
         {isOpen ? (
-          <IconArrowDownFromArc className={styles.icon} />
+          <IconChevronUp className={styles.icon} />
         ) : (
           <IconChevronDown className={styles.icon} />
         )}
       </div>
       {isOpen && (
-        <div className={`${styles.customOptions} scrollBar`}>
+        <div className={`${styles.customOptions} scrollBarMercury`}>
           <div 
             key={placeholder.value} 
             className={`${styles.customOption} ${selected.value === placeholder.value ? styles.active : ''}`}
