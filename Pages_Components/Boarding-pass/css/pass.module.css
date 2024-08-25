@@ -12,7 +12,7 @@
   background: linear-gradient(-45deg, rgba(var(--gradient2)), rgba(var(--gradient1)));
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
-  font-size: 0.9rem;
+  font-size: var(--font-size-sm);
 }
 
 .cardSec1 .bookingId {
@@ -21,7 +21,7 @@
   letter-spacing: 1px;
 }
 .cardSec1 .bookingId .idNO {
-  font-size: 1.2rem;
+  font-size: var(--font-size-lg);
   font-weight: 700;
 }
 
@@ -56,11 +56,11 @@
 .cardSec2 .departure h3,
 .cardSec2 .arrival h3 {
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: var(--font-size-lg);
 }
 .cardSec2 .departure > p,
 .cardSec2 .arrival > p {
-  font-size: 0.8rem;
+  font-size: var(--font-size-xs);
 }
 .cardSec2 .arrival {
   text-align: right;
@@ -78,7 +78,7 @@
 
 .toDate,
 .fromDate {
-  font-size: 0.9rem;
+  font-size: var(--font-size-sm);
 }
 
 .condidate {
@@ -87,10 +87,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Urbanist", sans-serif;
   letter-spacing: 1px;
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: var(--font-size-sm);
 }
 .condidate .name {
   grid-column: span 2;
@@ -99,7 +99,7 @@
   grid-column: span 3;
 }
 .condidate .label {
-  font-size: 0.8rem;
+  font-size: var(--font-size-xs);
   color: #888;
 }
 
@@ -118,17 +118,17 @@
   gap: 1rem;
 }
 .cabinCat .catSec1 {
-  font-size: 1.4rem;
+  font-size: var(--font-size-xl);
   font-family: "Work Sans", sans-serif;
   text-transform: uppercase;
   font-weight: 800;
   color: rgba(var(--dark-magenta));
 }
 .cabinCat .catSec1 .catLabel {
-  font-size: 0.9rem;
+  font-size: var(--font-size-sm);
   color: #888;
   text-transform: initial;
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 .downloadBPass {

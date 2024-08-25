@@ -1,0 +1,47 @@
+:root {
+    --dark-magenta: 147, 40, 142;
+    --ghost-white: 246, 249, 255;
+    --gray: 125, 127, 130;
+    --dodger-blue: 0, 140, 255;
+    --green-fs: 0, 152, 33;
+    --red-custom: 233, 31, 31;
+    --gradient1: 155, 46, 138;
+    --gradient2: 234, 114, 91;
+    --primary-900: #020617;
+    --primary-800: #121b4b;
+    --primary-700: #21307f;
+    --primary-600: #3045b3;
+    --primary-500: #3e59e8;
+    --primary-400: #697eed;
+    --primary-300: #94a3f2;
+    --primary-200: #bfc8f7;
+    --primary-100: #e8eefc;
+    --primary-50: #f9faff;
+  
+  
+    --mercury-50: rgb(246, 247, 248);
+    --mercury-100: rgb(230, 231, 234);
+    --mercury-200: rgb(220, 221, 225);
+    --mercury-300: rgb(195, 198, 205);
+    --mercury-400: rgb(166, 170, 180);
+    --mercury-500: rgb(144, 147, 161);
+    --mercury-600: rgb(127, 130, 145);
+    --mercury-700: rgb(114, 115, 131);
+    --mercury-800: rgb(96, 97, 109);
+    --mercury-900: rgb(79, 80, 89);
+    --mercury-950: rgb(51, 51, 56);
+  
+    --xs: 576px;
+    --sm: 720px;
+    --md: 1120px;
+    --lg: 1280px;
+    --xl: 1472px;
+    --xxl: 1600px;
+
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-md: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 20px;
+    
+  }

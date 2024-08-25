@@ -1,5 +1,6 @@
 import AppShell from "@/components/AppShell";
 import "@/styles/globals.css";
+import "@/styles/root.css";
 import Head from "next/head";
 
 export default function App({ Component, pageProps }) {
