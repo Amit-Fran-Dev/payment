@@ -6,7 +6,22 @@ const BoardingPass = () => {
   return (
     <div className={`${styles.pass} container-xs`}>
       <Heading title="Boarding Pass" />
-      <PassCard/>
+      <PassCard />
+      <Condidate />
+      <div className={styles.dividerMain} />
+      <div className={styles.cabinCat}>
+        <div className={styles.catSec1}>
+          <p className={styles.catLabel}>Cabin Category</p>
+          <p>Ocean View <br/> Standard</p>
+        </div>
+        <div className={styles.catSec2}>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg"
+            width={150}
+            height={150}
+          />
+        </div>
+      </div>
     </div>
   );
 };
@@ -56,6 +71,40 @@ export const PassCard = () => {
       <div className={styles.divider} />
       <div className={styles.cardSec3}>
         <p>Halting Ports: Trincomalee, Hambantota, Jaffna</p>
+      </div>
+    </div>
+  );
+};
+
+export const Condidate = () => {
+  return (
+    <div className={styles.condidate}>
+      <div className={styles.name}>
+        <p className={styles.label}>Name</p>
+        <p>Manchikanti Yugandhar</p>
+      </div>
+      <div className={styles.ship}>
+        <p className={styles.label}>Ship</p>
+        <p>MV Empress</p>
+      </div>
+      <div className={styles.deck}>
+        <p className={styles.label}>Deck</p>
+        <p>03</p>
+      </div>
+      <div className={styles.stateroom}>
+        <p className={styles.label}>Stateroom</p>
+        <p>3143</p>
+      </div>
+      <div className={styles.MusterStation}>
+        <p className={styles.label}>Muster Station</p>
+        <p>10</p>
+      </div>
+      <div className={styles.port}>
+        <p className={styles.label}>Port</p>
+        <p>
+          Mumbai International Cruise Terminal, Shoorji Vallabhadas Rd, Kala
+          Ghoda, Fort, Mumbai, Maharashtra 400001.
+        </p>
       </div>
     </div>
   );

@@ -5,6 +5,7 @@
     max-width: 450px;
     margin-left: auto;
     margin-right: auto;
+    background-color: #fff;
 }
 
 .passCard{
@@ -30,6 +31,7 @@
 .divider{
     border-top: 2px dashed rgba(255,255,255,0.3);
     position: relative;
+    height: 0;
 }
 .divider::after{
     content:'';
@@ -37,8 +39,8 @@
     width: 1rem;
     height: 1rem;
     background-color: #ffffff;
-    top:-0.5rem;
-    left:-0.5rem;
+    top:calc(-0.5rem - 1px);
+    left:-0.55rem;
     border-radius: 50%;
 }
 .divider::before{
@@ -47,8 +49,8 @@
     width: 1rem;
     height: 1rem;
     background-color: #ffffff;
-    top:-0.5rem;
-    right:-0.5rem;
+    top:calc(-0.5rem - 1px);
+    right:-0.55rem;
     border-radius: 50%;
 }
 
@@ -77,4 +79,57 @@
 
 .toDate, .fromDate{
     font-size: 0.9rem;
+}
+
+.condidate{
+    padding: 1rem;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    font-family: "Red Hat Display", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    .name{
+        grid-column: span 2;
+    }
+    .port{
+        grid-column: span 3;
+    }
+    .label{
+        font-size: 0.8rem;
+        color:#888;
+    }
+
+
+}
+
+.dividerMain{
+    border-top: 2px dashed rgba(0,0,0,0.3);
+    position: relative;
+    height: 0;
+    margin: 0 1rem;
+}
+.cabinCat{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    .catSec1{
+    font-size: 1.4rem;
+    font-family: "Work Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    color:rgba(var(--gradient1));
+        .catLabel{
+            font-size: 0.9rem;
+            color:#888;
+            text-transform: initial;
+            font-family: "Red Hat Display", sans-serif;
+
+        }
+    }
+    
 }
