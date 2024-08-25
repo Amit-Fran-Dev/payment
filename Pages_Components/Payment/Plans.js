@@ -40,7 +40,7 @@ export const PlansCard = () => {
           <p>{fromDate.time}</p>
         </div>
         <div className={plans.centerLogo}>
-          <img src="/assets/icons/ship.svg" width="30" height="30" />
+          <img src="/assets/icons/ship.svg" width="40" height="40" />
         </div>
         <div className={plans.toDate}>
           <h4>{toDate.date}</h4>

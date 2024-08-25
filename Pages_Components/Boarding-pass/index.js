@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./css/pass.module.css";
 import { Heading } from "../Payment";
+import { IconDownload, IconShare } from "@tabler/icons-react";
 
 const BoardingPass = () => {
   return (
@@ -9,19 +10,8 @@ const BoardingPass = () => {
       <PassCard />
       <Condidate />
       <div className={styles.dividerMain} />
-      <div className={styles.cabinCat}>
-        <div className={styles.catSec1}>
-          <p className={styles.catLabel}>Cabin Category</p>
-          <p>Ocean View <br/> Standard</p>
-        </div>
-        <div className={styles.catSec2}>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg"
-            width={150}
-            height={150}
-          />
-        </div>
-      </div>
+      <CabinCat />
+      <DownloadAndShare />
     </div>
   );
 };
@@ -57,7 +47,7 @@ export const PassCard = () => {
           </div>
         </div>
         <div className={styles.centerLogo}>
-          <img src="/assets/icons/ship.svg" width="30" height="30" />
+          <img src="/assets/icons/ship.svg" width="60" height="60" />
         </div>
         <div className={styles.arrival}>
           <p>Arrival port</p>
@@ -107,5 +97,38 @@ export const Condidate = () => {
         </p>
       </div>
     </div>
+  );
+};
+
+export const CabinCat = () => {
+  return (
+    <div className={styles.cabinCat}>
+      <div className={styles.catSec1}>
+        <p className={styles.catLabel}>Cabin Category</p>
+        <p>
+          Ocean View <br /> Standard
+        </p>
+      </div>
+      <div className={styles.catSec2}>
+        <img
+          src="/assets/qr.svg"
+          width={120}
+          height={120}
+        />
+      </div>
+    </div>
+  );
+};
+
+export const DownloadAndShare = () => {
+  return (
+    <>
+      <button className={styles.downloadBPass}>
+        Download Boarding Pass <IconDownload stroke={2} />
+      </button>
+      <button className={styles.shareVia}>
+        Share via <IconShare stroke={2} />
+      </button>
+    </>
   );
 };

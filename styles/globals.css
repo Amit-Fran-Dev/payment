@@ -7,7 +7,7 @@
   --ghost-white: 246, 249, 255;
   --gray: 125, 127, 130;
   --dodger-blue: 0, 140, 255;
-  --green-fs: 0, 152, 33, 1;
+  --green-fs: 0, 152, 33;
   --gradient1: 155, 46, 138;
   --gradient2: 234, 114, 91;
   --primary-900: #020617;
@@ -174,4 +174,15 @@ ul li a {
   flex-wrap: wrap;
   align-items: center;
   gap: 1rem;
+}
+
+main button{
+  transition:transform 0.2s ease, filter 0.2s ease;
+  
+}
+main button:not(header):hover {
+  transform: translateY(-5px);
+}
+main button:active{
+  filter: grayscale(60%);
 }

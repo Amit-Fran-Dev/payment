@@ -5,7 +5,7 @@
   max-width: 450px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #fff;
+  margin-bottom: 200px;
 }
 
 .passCard {
@@ -53,18 +53,22 @@
   border-radius: 50%;
 }
 
-.cardSec2 .departure h3, .cardSec2 .arrival h3 {
+.cardSec2 .departure h3,
+.cardSec2 .arrival h3 {
   font-weight: 700;
   font-size: 1.3rem;
 }
-.cardSec2 .departure > p, .cardSec2 .arrival > p {
+.cardSec2 .departure > p,
+.cardSec2 .arrival > p {
   font-size: 0.8rem;
 }
 .cardSec2 .arrival {
   text-align: right;
 }
 
-.cardSec1, .cardSec2, .cardSec3 {
+.cardSec1,
+.cardSec2,
+.cardSec3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,7 +76,8 @@
   color: #fff;
 }
 
-.toDate, .fromDate {
+.toDate,
+.fromDate {
   font-size: 0.9rem;
 }
 
@@ -117,11 +122,58 @@
   font-family: "Work Sans", sans-serif;
   text-transform: uppercase;
   font-weight: 800;
-  color: rgba(var(--gradient1));
+  color: rgba(var(--dark-magenta));
 }
 .cabinCat .catSec1 .catLabel {
   font-size: 0.9rem;
   color: #888;
   text-transform: initial;
   font-family: "Red Hat Display", sans-serif;
+}
+
+.downloadBPass {
+  font-weight: 600;
+  padding: 0.7rem 2rem;
+  border-radius: 4px;
+  color: #fff;
+  background-color: rgba(var(--dark-magenta));
+  display: flex;
+  gap: 0.5rem;
+  margin: 2rem auto;
+}
+
+.shareVia {
+  font-weight: 700;
+  padding: 0.7rem 2rem;
+  color: rgba(var(--dark-magenta));
+  display: flex;
+  gap: 0.5rem;
+  margin: 2rem auto;
+}
+
+.centerLogo {
+  width: 45px;
+  height: 45px;
+  position: relative;
+}
+
+.centerLogo::before {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 0;
+  top: 21px;
+  left: -30px;
+  border-top: 2px dashed rgba(255, 255, 255, 0.5);
+}
+
+.centerLogo::after {
+  content: "";
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 0;
+  top: 21px;
+  right: -30px;
+  border-top: 2px dashed rgba(255, 255, 255, 0.5);
 }/*# sourceMappingURL=pass.module.css.map */
