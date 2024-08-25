@@ -35,7 +35,7 @@
     margin-top: 1rem;
 }
 .heading{
-    font-size: clamp(var(--font-size-sm), var(font-size-lg) + 1vw, var(--font-size-xxl));
+    font-size: clamp(var(--font-size-md) ,16px + 2vw, var(--font-size-3xl));
     margin: 2rem 0;
     font-weight: 700;
     display: flex;
@@ -44,7 +44,7 @@
     gap: 1rem;
 }
 .headingMob{
-    font-size: clamp(var(--font-size-sm), var(font-size-lg) + 1vw, var(--font-size-xxl));
+    font-size: clamp(var(--font-size-sm), 16px + 1vw, var(--font-size-xxl));
     margin-bottom: 0;
     margin-top: 2rem;
     font-weight: 700;
@@ -249,7 +249,7 @@
     height: 1.5;
     background-color: rgba(var(--dark-magenta));
     color:#fff;
-    font-size: var(--font-size-xxl);
+    font-size: var(font-size-xxl);
     font-weight: 700;
     padding: 0.6rem;
     border-radius: 0.5rem;
