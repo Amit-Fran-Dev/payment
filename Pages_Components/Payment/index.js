@@ -9,7 +9,7 @@ const PaymentGetway = () => {
     <div className={`${classes.pageSection} container-xl`}>
       <HeadingMob title="Select Payment Method" />
       <div className={classes.sec1}>
-        <HeadingDesk title="Select Payment Method"/>
+        <HeadingDesk title="Select Payment Method" />
         <PaymentMethods />
       </div>
       <Plans />
@@ -58,6 +58,7 @@ export const Heading = ({ title }) => {
   return (
     <h2 className={`${classes.heading}`}>
       <IconArrowLeft
+        className={classes.backArrow}
         width={40}
         height={40}
         style={{ cursor: "pointer" }}
