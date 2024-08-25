@@ -1,5 +1,5 @@
 import styles from "./css/health-declaration.module.css";
-import CustomRadioButtons from "./CustomRadio";
+import CustomRadioButtons, { TermsCheckbox } from "./CustomRadio";
 
 const HealthDeclaration = () => {
   return (
@@ -12,7 +12,7 @@ const HealthDeclaration = () => {
       <form className={styles.form}>
         <HealthQuestions />
         <div className={styles.termsConditions}>
-          <input type="checkbox" />
+          <TermsCheckbox/>
           <label>I Accept The Terms And Conditions</label>
         </div>
         <span className={styles.center}>
