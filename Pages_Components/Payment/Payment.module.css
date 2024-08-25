@@ -32,7 +32,7 @@
 }
 
 .heading {
-  font-size: clamp(0.9rem, 1.2rem + 1vw, 2rem);
+  font-size: clamp(var(--font-size-sm), var(font-size-lg) + 1vw, var(--font-size-xxl));
   margin: 2rem 0;
   font-weight: 700;
   display: flex;
@@ -42,7 +42,7 @@
 }
 
 .headingMob {
-  font-size: clamp(0.9rem, 1.2rem + 1vw, 2rem);
+  font-size: clamp(var(--font-size-sm), var(font-size-lg) + 1vw, var(--font-size-xxl));
   margin-bottom: 0;
   margin-top: 2rem;
   font-weight: 700;
@@ -74,7 +74,7 @@
 }
 .paymentMethods {
   min-width: 280px;
-  background-image: linear-gradient(45deg, var(--primary-50), var(--primary-100));
+  background-image: linear-gradient(45deg, rgba(var(--dodger-blue), 0.1), rgba(var(--dodger-blue), 0.2));
   border-radius: 0.5rem;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -95,11 +95,11 @@
   padding: 0.5rem 1rem 1rem 1rem;
 }
 .paymentMethods .upi .methodContainer .name, .paymentMethods .DbCb .methodContainer .name, .paymentMethods .netB .methodContainer .name {
-  font-size: 0.9rem;
+  font-size: var(--font-size-sm);
   font-weight: bold;
 }
 .paymentMethods .upi .methodContainer .description, .paymentMethods .DbCb .methodContainer .description, .paymentMethods .netB .methodContainer .description {
-  font-size: 0.8rem;
+  font-size: var(--font-size-xs);
 }
 .paymentMethods .upi[data="1"], .paymentMethods .DbCb[data="2"], .paymentMethods .netB[data="3"] {
   background-color: #fff !important;
@@ -119,7 +119,7 @@
 }
 
 .paymentMethods > div:hover {
-  background: var(--primary-100);
+  background: rgba(var(--dodger-blue), 0.2);
 }
 
 .paymentCards {
@@ -137,7 +137,7 @@
   padding: 0.8rem;
   width: 100%;
   border-radius: 0.5rem;
-  font-size: 0.9rem;
+  font-size: var(font-size-sm);
   letter-spacing: 2px;
   outline: none;
   font-family: "Dosis", sans-serif;
@@ -158,13 +158,13 @@
   font-family: "Urbanist", sans-serif;
   font-weight: 700;
   color: #444;
-  font-size: 0.8rem;
+  font-size: var(font-size-sm);
   margin-bottom: 1rem;
 }
 .paymentCards .upiDesc .wrapperDesc span {
   width: 25px;
   height: 25px;
-  font-size: 0.8rem;
+  font-size: var(font-size-sm);
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -229,7 +229,7 @@
   gap: 0.5rem;
 }
 .secureMsg p {
-  font-size: 1.1rem;
+  font-size: var(font-size-lg);
   font-weight: bold;
   color: #a9a9a9;
   font-family: "Red Hat Display", sans-serif;
@@ -240,7 +240,7 @@
   height: 1.5;
   background-color: rgba(var(--dark-magenta));
   color: #fff;
-  font-size: 1.4rem;
+  font-size: var(font-size-xxl);
   font-weight: 700;
   padding: 0.6rem;
   border-radius: 0.5rem;
@@ -251,12 +251,12 @@
   display: flex;
   margin: 3rem 0 1rem 0;
   flex-wrap: wrap;
-  font-size: 0.8rem;
+  font-size: var(font-size-xs);
 }
 .debitMsgBox span {
   width: 25px;
   height: 25px;
-  font-size: 0.8rem;
+  font-size: var(font-size-xs);
   border-radius: 50%;
   display: grid;
   place-items: center;

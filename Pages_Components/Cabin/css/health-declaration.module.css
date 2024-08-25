@@ -5,13 +5,13 @@
 }
 
 .headingForm {
-  font-size: 1.4rem;
+  font-size: var(--font-size-xl);
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
 .formDesc {
-  font-size: 1.2rem;
+  font-size: var(--font-size-xl);
   margin-bottom: 3rem;
 }
 
@@ -22,7 +22,7 @@
   grid-template-columns: 1fr auto;
 }
 .question p {
-  font-size: clamp(1rem, 1rem + 0.2vw, 1.2rem);
+  font-size: clamp(var(--font-size-md), var(--font-size-md) + 0.5vw, var(--font-size-xl));
   list-style-type: disc;
   text-align: start;
 }
@@ -37,8 +37,8 @@
 .termsConditions {
   display: flex;
   gap: 0.5rem;
-  margin-top: 2rem;
-  font-size: 1.2rem;
+  margin-top: 3rem;
+  font-size: clamp(var(--font-size-md), var(--font-size-md) + 0.5vw, var(--font-size-xl));
   font-weight: 600;
 }
 .termsConditions input {
@@ -49,7 +49,7 @@
   height: 1.5;
   background-color: rgba(var(--dark-magenta));
   color: #fff;
-  font-size: 1.4rem;
+  font-size: var(--font-size-xl);
   font-weight: 700;
   padding: 0.6rem;
   border-radius: 0.3rem;

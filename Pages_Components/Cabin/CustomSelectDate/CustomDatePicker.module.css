@@ -14,7 +14,7 @@
   outline: none;
   font-family: "Dosis", sans-serif;
   font-weight: bold;
-  color: rgba(var(--mercury-100));
+  color: var(--mercury-900);
 }
 
 .customDatePickerTrigger:hover {
@@ -23,7 +23,7 @@
 
 .icon {
   margin-left: 10px;
-  font-size: 16px;
+  font-size: var(--font-size-md);
   color: rgba(var(--mercury-600));
 }
 
@@ -40,5 +40,5 @@
   background-color: #fff;
   font-family: "Dosis", sans-serif;
   font-weight: bold;
-  color: var(--mercury-950);
+  color: var(--mercury-900);
 }

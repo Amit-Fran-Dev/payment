@@ -13,7 +13,7 @@
   }
   @media screen and (max-width: 576px) {
     .radioOption{
-      font-size: 0.9rem;
+      font-size: var(--font-size-sm);
     }
   }
   .hiddenInput {
