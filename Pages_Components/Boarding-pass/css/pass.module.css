@@ -1,0 +1,75 @@
+.pass {
+  padding: 1rem;
+  font-family: "Urbanist", sans-serif;
+  letter-spacing: 1px;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.passCard {
+  background: linear-gradient(-45deg, rgba(var(--gradient2)), rgba(var(--gradient1)));
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  font-size: 0.9rem;
+}
+
+.cardSec1 .bookingId {
+  text-align: right;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.cardSec1 .bookingId .idNO {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.divider {
+  border-top: 2px dashed rgba(255, 255, 255, 0.3);
+  position: relative;
+}
+
+.divider::after {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  background-color: #ffffff;
+  top: -0.5rem;
+  left: -0.5rem;
+  border-radius: 50%;
+}
+
+.divider::before {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  background-color: #ffffff;
+  top: -0.5rem;
+  right: -0.5rem;
+  border-radius: 50%;
+}
+
+.cardSec2 .departure h3, .cardSec2 .arrival h3 {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.cardSec2 .departure > p, .cardSec2 .arrival > p {
+  font-size: 0.8rem;
+}
+.cardSec2 .arrival {
+  text-align: right;
+}
+
+.cardSec1, .cardSec2, .cardSec3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  color: #fff;
+}
+
+.toDate, .fromDate {
+  font-size: 0.9rem;
+}/*# sourceMappingURL=pass.module.css.map */

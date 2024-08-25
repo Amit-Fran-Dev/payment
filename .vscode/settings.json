@@ -21,7 +21,9 @@
         "Pages_Components/Cabin/css/health-declaration.module.css": true,
         "Pages_Components/Cabin/css/health-declaration.module.css.map": true,
         "Pages_Components/Cabin/css/stepper.module.css": true,
-        "Pages_Components/Cabin/css/stepper.module.css.map": true
+        "Pages_Components/Cabin/css/stepper.module.css.map": true,
+        "Pages_Components/Boarding-pass/css/pass.module.css": true,
+        "Pages_Components/Boarding-pass/css/pass.module.css.map": true
     },
     "hide-files.files": [
         "Pages_Components/Payment/Payment.module.css.map",
@@ -39,6 +41,8 @@
         "Pages_Components/Cabin/css/health-declaration.module.css",
         "Pages_Components/Cabin/css/health-declaration.module.css.map",
         "Pages_Components/Cabin/css/stepper.module.css",
-        "Pages_Components/Cabin/css/stepper.module.css.map"
+        "Pages_Components/Cabin/css/stepper.module.css.map",
+        "Pages_Components/Boarding-pass/css/pass.module.css",
+        "Pages_Components/Boarding-pass/css/pass.module.css.map"
     ]
 }
