@@ -59,7 +59,7 @@ const HealthDeclaration = () => {
         In the last 8 days before your jurney, have you had any of the symptoms?
         (Please Mark Yes or no against each symptom)
       </p>
-      <form className={styles.form}>
+      <form onSubmit={(e)=>e.preventDefault} className={styles.form}>
         <HealthQuestions />
         <div className={styles.termsConditions}>
           <TermsCheckbox/>
