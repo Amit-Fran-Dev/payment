@@ -63,7 +63,7 @@ const HealthDeclaration = () => {
         <HealthQuestions />
         <div className={styles.termsConditions}>
           <TermsCheckbox/>
-          <label>I Accept The Terms And Conditions</label>
+          <label for="check">I Accept The Terms And Conditions</label>
         </div>
         <span className={styles.center}>
           <button className={styles.submit}>Generate Boarding Pass</button>

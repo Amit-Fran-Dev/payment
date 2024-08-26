@@ -65,6 +65,8 @@ export const TermsCheckbox = () => {
     <input
       type="checkbox"
       checked={isChecked}
+      name="check"
+      id="check"
       onChange={handleCheckboxChange}
       className={styles.hiddenInput}
     />
